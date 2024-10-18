@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "TT Lakes";
+    font-weight: 500;
+    src: 
+        url("/font/TTLakes-Black.eot") format("eot"),
+}
+
+html {
+    box-sizing: border-box;
+    font-family: "TT Lakes", sans-serif;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body, p, h1, h2, li, a, ul, button {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    color: #1b1c21;
+}
+
+li {
+    list-style: none;
+}
+
+button, img {
+    border-style: none;
+    background: none;
+    cursor: pointer;
+}
+
+.burger-menu {
+    position: relative;
+    background-color: #FFFFFF;
+    max-width: 320px;
+}
+
+.burger-menu__container {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    transform: translate(0);
+    min-height: 100%;
+    width: 320px;
+    box-shadow: 16px 0 52px 0 rgba(14, 24, 80, 0.2), 
+    -2px 0 4px 0 rgba(69, 79, 126, 0.02);
+    padding: 15px 25px;
+    overflow: hidden;
+}
+
+.burger-menu__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0;
+}
+
+.header__buttons-wrapper {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.header__button:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.header__button:active {
+    opacity: 0.2;
+}
+
+.burger-menu__nav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+}
+
+.burger-menu__nav-items {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 222px;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.burger-menu__nav-item {
+    margin-bottom: 30px;
+}
+
+.burger-menu__nav-item:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.burger-menu__nav-item:active {
+    opacity: 0.2;
+}
+
+.burger-menu__nav-item:last-child {
+    margin-bottom: 50px;
+}
+
+.burger-menu__nav-item-active {
+    opacity: 0.5;
+}
+
+.burger-menu__nav-item-active::before {
+    position: absolute;
+    content: '';
+    content: '';
+    height: 40px;
+    width: 4px;
+    background-color: #41F6D7;  
+    transform: translate(-25px, -12px);
+    border-radius: 5px;
+}
+
+.burger-menu__footer {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.burger-menu__footer-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.burger-menu__footer-button:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.burger-menu__footer-button:active {
+    opacity: 0.2;
+}
+
+.burger-menu__footer-phone {
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.burger-menu__footer-langs {
+    display: flex;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.burger-menu__footer-lang:hover {
+    opacity: 0.5;
+    transition: 0.2s;
+}
+
+.burger-menu__footer-lang:active {
+    opacity: 0.2;
+}
+
+.burger-menu__footer-lang-active {
+    opacity: 0.5;
+}
